@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orkut</title>
+  <link rel="stylesheet" href="./style.css">
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+
+  <header>
+    <img src="./orkutLogo.svg" alt="Logo do Orkut">
+  </header>
+
+  <main>
+
+    <img src="./orkutCircle.svg" alt="Círculo Rosa" id="pinkCircle">
+    <span id="acessOrkut">Acesse o Orkut</span>
+
+    <form id="formLogin">
+
+      <input type="email" placeholder="E-mail">
+      <input type="password" placeholder="Senha">
+
+      <input type="checkbox" id="rememberPassword" tabindex="1">
+
+      <label for="rememberPassword">
+
+      <svg width="20" height="20"     viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="checkboxRememberPassword">
+        
+        <rect x="0.5" y="0.5" width="19" height="19" rx="5.5" fill="none" stroke="#DCDCDC"/>
+
+        <rect x="3" y="3" width="14" height="14" rx="4" fill="none"/>
+      </svg>
+
+
+        Lembrar minha senha
+      </label>
+    </form>
+
+    <button form="formLogin" id="signIn">Entrar na conta</button>
+
+    <button form="createAccount" id="signUp">Criar uma conta</button>
+
+    <span id="forgetPassword"><a href="#">Esqueci minha senha</a></span>
+  </main>
+
+  <footer>
+    <span>Todos os direitos reservados.</span>
+
+    <a href="https://instagram.com/raphitos_" target="_blank">@raphitos_</a>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

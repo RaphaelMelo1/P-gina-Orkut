@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 2px solid var(--pink-color);
+}
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #D9E6F7;
+  --bg2-color: #FDFEFF;
+
+  --pink-color: #ED2590;
+  --pink-color-hover: #d83089;
+
+  --gray-color: #EFF3F8;
+  --gray-color-hover: #edeff1;
+  --gray2-color: #868686;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: 'Red Hat Display';
+  display: grid;
+}
+
+header {
+  width: 100%;
+  height: 7.1rem;
+  background-color: var(--bg2-color);
+
+  margin-bottom: 5.6rem;
+
+  display: grid;
+  place-content: center;
+}
+
+/* main */
+
+main {
+  width: 32rem;
+  height: 54.4rem;
+  background: var(--bg2-color);
+
+  border-radius: 1.6rem;
+
+  justify-self: center;
+  padding: 1.6rem;
+
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+
+  margin-bottom: 6.5rem;
+}
+
+#pinkCircle {
+  width: 3.2rem;
+  height: 3.2rem;
+
+  margin-bottom: 2.4rem;
+}
+#acessOrkut {
+  font-size: 2rem;
+  color: var(--pink-color);
+  font-weight: 700;
+
+  margin-bottom: 5.3rem;
+}
+
+main form input {
+  width: 100%;
+  height: 4.1rem;
+  background: var(--gray-color);
+
+  font-size: 1.4rem;
+  color: var(--gray2-color);
+
+  padding: 1.2rem 0 1.2rem 1.4rem;
+
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  margin-bottom: 2.4rem;
+
+  font-weight: 400;
+}
+
+
+#rememberPassword {
+  display: none;
+}
+
+
+
+label {
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  display: flex;
+
+  margin-bottom: 4rem;
+
+  gap: 1.3rem;
+  color: var(--gray2-color);
+}
+
+main form svg {
+  cursor: pointer;
+}
+
+#rememberPassword:checked + label svg rect + rect {
+  fill: #ED2590;
+}
+
+main button {
+  width: 100%;
+  height: 3.8rem;
+
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+main button + button {
+  margin-top: 2.4rem;
+}
+#signIn {
+  background: var(--pink-color);
+  color: #fff;
+}
+#signIn:hover {
+  background: var(--pink-color-hover);
+}
+#signUp {
+  background: var(--gray-color);
+  color: var(--pink-color);
+
+  margin-bottom: 4rem;
+}
+#signUp:hover {
+  background: var(--gray-color-hover);
+}
+
+#forgetPassword a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--pink-color);
+}
+
+footer {
+  background: var(--gray-color);
+  width: 100%;
+  height: 4.8rem;
+  color: var(--pink-color);
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  display: grid;
+  place-items: center;
+  align-content: center;
+
+  position: fixed;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(233, 98, 233);
+}
