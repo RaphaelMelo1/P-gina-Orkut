@@ -5,6 +5,7 @@
 }
 *:focus {
   outline: 2px solid var(--pink-color);
+  border-radius: 8px;
 }
 :root {
   font-size: 62.5%;
@@ -24,6 +25,9 @@ body {
   background: var(--bg-color);
   font-family: 'Red Hat Display';
   display: grid;
+
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
 }
 
 header {
@@ -168,10 +172,12 @@ footer {
   place-items: center;
   align-content: center;
 
-  position: fixed;
   bottom: 0;
 }
 footer a {
   text-decoration: none;
   color: rgb(233, 98, 233);
+}
+a:focus {
+  border-radius: 2px;
 }
